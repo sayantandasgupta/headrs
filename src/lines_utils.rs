@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::{self, BufRead, BufReader};
 use std::path::Path;
 
-pub fn read_lines<P>(filename: P) -> Result<io::Lines<BufReader<File>>, String>
+fn read_lines<P>(filename: P) -> Result<io::Lines<BufReader<File>>, String>
 where
     P: AsRef<Path>,
 {
@@ -13,7 +13,7 @@ where
     Ok(reader.lines())
 }
 
-pub fn print_num_lines(all_lines : io::Lines<BufReader<File>>, n:i32) {
+fn print_num_lines(all_lines: io::Lines<BufReader<File>>, n: i32) {
     for (index, line) in all_lines.enumerate() {
         if index == (n).try_into().unwrap() {
             break;
@@ -23,5 +23,12 @@ pub fn print_num_lines(all_lines : io::Lines<BufReader<File>>, n:i32) {
             Ok(content) => println!("{}", content),
             Err(err) => eprintln!("Failed to Read Content : {}", err),
         }
+    }
+}
+
+pub fn get_lines(filename: &str, num_lines: i32) {
+    match read_lines(filename) {
+        Ok(all_lines) => print_num_lines(all_lines, num_lines),
+        Err(error) => eprintln!("{}", error),
     }
 }

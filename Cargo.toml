@@ -2,6 +2,9 @@
 name = "headrs"
 version = "0.1.0"
 edition = "2021"
+authors = ["Sayantan Dasgupta <sayantan.dasgupta21@gmail.com>"]
+description = "A simple Rust utility to clone the functionalities of the head tool in Linux"
+
 
 [dependencies]
 clap = { version = "4.5.27", features = ["derive"] }

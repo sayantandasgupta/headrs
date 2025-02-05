@@ -1,9 +1,8 @@
-use std::path::Path;
-
 use clap::Parser;
 
 mod bytes;
-mod lines_utils;
+mod lines;
+mod utils;
 
 #[derive(Parser, Debug)]
 #[command(
@@ -35,35 +34,14 @@ fn main() {
     match &args.lines {
         Some(lines) => {
             args.bytes = None;
-            for file in &args.file_paths {
-                let file_name = Path::new(file).file_name().unwrap().to_str().unwrap();
-
-                println!("==> {} <== ", file_name);
-
-                lines_utils::get_lines(file, *lines)
-            }
+            utils::read_lines(&args.file_paths, *lines);
         }
         None => match &args.bytes {
             Some(bytes) => {
-                for file in &args.file_paths {
-                    let file_name = Path::new(file).file_name().unwrap().to_str().unwrap();
-
-                    println!("==> {} <== ", file_name);
-
-                    match bytes::read_bytes(file, *bytes) {
-                        Ok(bytes) => println!("{}", bytes),
-                        Err(e) => eprintln!("Failed to extract bytes: {}", e),
-                    }
-                }
+                utils::read_bytes(&args.file_paths, *bytes);
             }
             None => {
-                for file in &args.file_paths {
-                    let file_name = Path::new(file).file_name().unwrap().to_str().unwrap();
-
-                    println!("==> {} <== ", file_name);
-
-                    lines_utils::get_lines(file, 10)
-                }
+                utils::read_lines(&args.file_paths, 10);
             }
         },
     }

@@ -146,13 +146,29 @@ If you are confused why I am using `cargo`, this project has been built using `c
 
 
 <!-- USAGE EXAMPLES -->
-<!-- ## Usage
+## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Here are the different ways this tool may be used
+
+1. Display the first 10 lines of any file
+   
+   ```
+   $> cargo run -- test.txt
+      The Project Gutenberg eBook of The Art of War
+          
+      This ebook is for the use of anyone anywhere in the United States and
+      most other parts of the world at no cost and with almost no restrictions
+      whatsoever. You may copy it, give it away or re-use it under the terms
+      of the Project Gutenberg License included with this ebook or online
+      at www.gutenberg.org. If you are not located in the United States,
+      you will have to check the laws of the country where you are located
+      before using this eBook.
+   $>  
+   ```
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -195,11 +211,11 @@ Don't forget to give the project a star! Thanks again!
 
 
 <!-- LICENSE -->
-<!-- ## License
+## License
 
-Distributed under the project_license. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 

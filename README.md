@@ -37,7 +37,7 @@
 <h3 align="center">headrs</h3>
 
   <p align="center">
-    project_description
+    A clone of the <b><i>head</i></b> tool using Rust
     <br />
     <a href="https://github.com/sayantandasgupta/headrs"><strong>Explore the docs »</strong></a>
     <br />
@@ -70,11 +70,11 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <!-- <li><a href="#roadmap">Roadmap</a></li> -->
+    <!-- <li><a href="#contributing">Contributing</a></li> -->
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <!-- <li><a href="#contact">Contact</a></li> -->
+    <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
   </ol>
 </details>
 
@@ -114,28 +114,34 @@ To run this project locally, you have to have Rust installed in your system, obv
   ```
 * Rust - [for Windows](https://forge.rust-lang.org/infra/other-installation-methods.html)
 
-<!-- ### Installation
+### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Fork the repository in your account. After forking a repository should form in your account like
+   
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   https://github.com/<YOUR_USERNAME>/headrs
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
+2. Then either use the HTTPS or the SSH URL to clone the repository in your local machine
+   
+    ```sh
+    git clone <URL>
+    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+3. Once the repository has been cloned, change into the source code directory
+
+    ```sh
+    cd headrs
+    ```
+
+4. Use `cargo` to run and build the project. 
+
+    ```sh
+     cargo run -- test.txt
+    ```
+
+If you are confused why I am using `cargo`, this project has been built using `cargo` which you can say helps to bundle the source code into a production-ready app. `Cargo` gets installed when you install `Rust`.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 

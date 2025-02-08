@@ -232,7 +232,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [license-shield]: https://img.shields.io/github/license/sayantandasgupta/headrs.svg?style=for-the-badge
 [license-url]: https://github.com/sayantandasgupta/headrs/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://linkedin.com/in/sayantan-dasgupta01
 [product-screenshot]: images/screenshot.png
 [Rust]: https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white
 [Rust-url]: https://www.rust-lang.org/
